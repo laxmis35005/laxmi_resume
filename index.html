@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laxmi Shridhar Madival | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #60a5fa;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #e5e7eb;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+            color: #111827;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .card ul {
+            padding-left: 20px;
+        }
+
+        .education {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .education-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #2563eb;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+        }
+
+        .contact {
+            text-align: center;
+            background: #111827;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #030712;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>Laxmi</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Hello, I'm <span>Laxmi Shridhar Madival</span></h1>
+
+            <p>BCA Graduate | Web Developer | Python Developer</p>
+
+            <a class="btn" href="#projects">View My Projects</a>
+
+            <a class="btn"
+               href="https://www.linkedin.com/in/laxmimadival03"
+               target="_blank">
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a dedicated and enthusiastic BCA fresher with a strong
+                foundation in computer applications, programming, database
+                management and problem-solving.
+            </p>
+
+            <br>
+
+            <p>
+                I am eager to start my career in an organization where I can
+                learn new skills, contribute to organizational growth and
+                continuously improve my technical and professional abilities.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="card">
+                <h3>Web Technologies</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Flask</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Database</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>SQLite</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>WordPress</li>
+                    <li>MS Office</li>
+                    <li>AI Tools</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="card">
+                <h3>Tourist Guide</h3>
+
+                <p>
+                    A static website developed using HTML and CSS to provide
+                    information about tourist destinations with a
+                    user-friendly web interface.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Simple Medical Chatbot</h3>
+
+                <p>
+                    A Python and Flask based chatbot that predicts diseases
+                    based on user symptoms and provides basic medicine
+                    suggestions using CSV datasets.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>E-Commerce Website</h3>
+
+                <p>
+                    A full-stack e-commerce application developed using
+                    HTML, CSS, JavaScript, Python, Flask and SQLite.
+                </p>
+
+                <br>
+
+                <p>
+                    Features include user authentication, product management,
+                    shopping cart, wishlist and order processing.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education">
+
+            <div class="education-item">
+                <h3>BCA</h3>
+
+                <p>
+                    Lal Bahadur Arts Science and SB Solabanna Shetty
+                    Commerce College, Sagar
+                </p>
+
+                <p><strong>CGPA:</strong> 8.97</p>
+                <p><strong>Year:</strong> 2025–2026</p>
+            </div>
+
+
+            <div class="education-item">
+                <h3>12th Grade</h3>
+
+                <p>
+                    Shri Marikamba Government College, Sirsi
+                </p>
+
+                <p><strong>Percentage:</strong> 86%</p>
+                <p><strong>Year:</strong> 2023</p>
+            </div>
+
+
+            <div class="education-item">
+                <h3>10th Grade</h3>
+
+                <p>
+                    Shri Marikamba Government High School, Sirsi
+                </p>
+
+                <p><strong>Percentage:</strong> 94.88%</p>
+                <p><strong>Year:</strong> 2021</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Internship -->
+    <section>
+        <h2>Internship Experience</h2>
+
+        <div class="about">
+
+            <div class="card">
+                <h3>Web Development Intern</h3>
+
+                <p>
+                    <strong>Encrypted Wizards</strong>
+                </p>
+
+                <p>June 2026 – Present</p>
+
+                <br>
+
+                <ul style="text-align:left;">
+                    <li>Maintaining and updating websites.</li>
+                    <li>Updating website content, notices and information.</li>
+                    <li>Working with HTML, CSS and JavaScript.</li>
+                    <li>Using Git/GitHub and Vercel.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Certifications -->
+    <section>
+        <h2>Certifications</h2>
+
+        <div class="skills-container">
+
+            <div class="card">
+                <h3>AI Fundamentals</h3>
+                <p>Upfront</p>
+            </div>
+
+            <div class="card">
+                <h3>Database Management System</h3>
+                <p>Scalar</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email:
+            <a href="mailto:laxmis35005@gmail.com">
+                laxmis35005@gmail.com
+            </a>
+        </p>
+
+        <p>Phone: +91 9380195181</p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/laxmimadival03"
+               target="_blank">
+                linkedin.com/in/laxmimadival03
+            </a>
+        </p>
+
+        <p>Location: Karnataka, India</p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Laxmi Shridhar Madival. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
